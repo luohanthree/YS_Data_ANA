@@ -6,10 +6,26 @@ import java.sql.*;
  * @author zhihuanzhihuan
  */
 public class InsertValues {
-    private int how_Many,boss_Id;
+    private int howMany, bossId;
     public static final String DBURL = "jdbc:sqlserver://localhost:1433;DatabaseName=Genshin_Impact";
-    private static final String USER = "ZHZH";
-    private static final String PASSWD = "123ZHZH!";
+    static final String USER = "ZHZH";
+    static final String PASSWD = "123ZHZH!";
+
+    public int getHowMany() {
+        return howMany;
+    }
+
+    public void setHowMany(int howMany) {
+        this.howMany = howMany;
+    }
+
+    public int getBossId() {
+        return bossId;
+    }
+
+    public void setBossId(int bossId) {
+        this.bossId = bossId;
+    }
 
     /**
      *
